@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>TEST</title>
+</head>
+<body>
+    <div id="content">
+        <div id="file_container">
+            <span>Файл:</span>
+            <input type="file" id="fileInput">
+        </div>
+        <button onclick="uploadFile()">Порахувати</button>
+        <div id="backdrop"><div id="loader" ></div></div>
+        <ul id="list">
+            <li id="item">Найбільше число: <span id="value_max"></span></li>
+            <li id="item">Найменше число: <span id="value_min"></span></li>
+            <li id="item">Середнє арифметичне значення: <span id="arithmetic_mean"></span></li>
+            <li id="item">Медіана: <span id="mediana"></span></li>
+            <li id="item">Максимальна спадаюча послідовність: <span id="max_decreasing_sequence"></span><span id="arr_num_dec"></span></li>
+            <li id="item">Максимальна зростаюча послідовність: <span id="max_increasing_sequence"></span><span id="arr_num_inc"></span></li>
+        </ul>
+        <div>
+            <p>1.Виберіть файл<br>2.Натисніть кнопку "Порахувати"</p>
+            <p>*файл повинен бути в форматі .txt і кожне число має починатися з нового рядка (як в файлі з тз)</p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./index.js" defer></script>
+</html>
